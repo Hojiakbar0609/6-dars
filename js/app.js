@@ -66,6 +66,7 @@ stopGame.addEventListener('click', () => {
     stopGameEl.style.transform = 'translate(-50%, -50%)'
     stopGameEl.classList.remove('hidden')
     document.querySelector('h3').textContent = counter
+    spiderImg.classList.add('hidden')
 })
 restartBtn.addEventListener('click', () => {
     document.querySelector('h1').textContent = 0
@@ -77,5 +78,5 @@ restartBtn.addEventListener('click', () => {
     document.getElementById('buttons').style.display = 'flex'
     stopGameEl.style.transform = 'translate(0, -800px)'
     document.querySelector('h3').textContent = 0
-
+    spiderImg.classList.remove('hidden')
 })
